@@ -1,0 +1,69 @@
+# 轮子、Fake News
+falundafa
+minghui
+dafahao
+epochtimes
+ntdtv
+voachinese
+appledaily
+nextdigital
+dalailama
+bloomberg
+independent
+freetibet
+citizenpowerfor
+rfa.org
+theinitium.com
+tibet.net
+bannedbook.org
+storm.mg
+chinadigitaltimes
+mpweekly.com
+thenewslens.com
+pincong.rocks
+soundofhope.org
+aboluowang.com
+shenyunperformingarts.org
+cirosantilli
+chinapress.com.my
+zhuichaguoji.org
+fawanghuihui.org
+amnesty.org
+hrw.org
+zhengjian.org
+wujieliulan.com
+dongtaiwang.com
+wujieliulan.com
+yibaochina.com
+creaders.net
+ydn.com.tw
+speedtest.net
+www.speedtest.net
+fast.com
+www.fast.com
+speed.cloudflare.com
+www.librespeed.cn
+# 容易被利用于欺诈
+beanfun.com
+gashpoint.com
+# 正则
+#
+##惹不起 - 迅雷 
+Ban Thun­der (.?)(xun­lei|sandai|Thun­der|XL­LiveUD)(.) 
+##2 惹不起 - 神功 2 
+##Ban wheel-2
+(.*.||)(gov|12377|12315|talk.news.pts.org|cread­ers|zhuich­aguoji|efcc.org|cy­ber­po­lice|abolu­owang|tu­idang|epochtimes|dafa­hao|falundafa|minghui|falu­naz|zhengjian|110.qq|mingjingnews|in­medi­ahk|xin­sheng|banned­book|nt­dtv|falun­gong|12321|se­cretchina|epochweekly|cn.rfi).(cn|com|org|net|club|net|fr|tw|hk)  
+##3 禁止垃圾邮件 Ban Spam 
+Ban Spam (^.*@)(guer­ril­la­mail|guer­ril­la­mail­block|shark­lasers|grr|poke­mail|spam4|bc­cto|chacuo|027168).(info|biz|com|de|net|org|me|la)  
+##4 惹不起 -
+BT Ban  BT Bit­Tor­rent pro­to­col  
+##6 惹不起 - BT2 
+Ban BT-2  (tor­rent|.tor­rent|peer_id=|in­fo_hash|get_peers|find­_n­ode|Bit­Tor­rent|an­nounce_peer|an­nounce.php?passkey=)  
+##7 惹不起 - 神功 Ban wheel
+(.*.||)(dafa­hao|minghui|dong­tai­wang|epochtimes|nt­dtv|falundafa|wu­jieli­u­lan|zhengjian).(org|com|net)  
+##8 禁止垃圾邮件 
+Pro­hibit spam (Sub­ject|HELO|SMTP)  
+##9 惹不起 - 360 
+360 ser­vice pro­hib­ited  (.+.|^)(360|so).(cn|com)  
+##10 惹不起 - 百度精准定位 
+Ban Baidu high-pre­ci­sion po­si­tion­ing (api|ps|sv|off­navi|newvec­tor|ulog.imap|newloc)(.map|).(baidu|n.shifen).com  
