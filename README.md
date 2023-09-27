@@ -5,12 +5,12 @@
 A V2board node server based on multi core, modified from XrayR.  
 一个基于多种内核的V2board节点服务端，修改自XrayR，支持V2ay,Trojan,Shadowsocks协议。
 
-**注意：1.1.0将更换为V2board1.7.0之后新增的Api，原Api将被移除，请1.7.0之前的用户使用1.1.0之前的版本。**
+**注意： 本项目需要V2board版本 >= 1.7.0**
 
 ## 特点
 
 * 永久开源且免费。
-* 支持V2ray，Trojan， Shadowsocks多种协议。
+* 支持Vmess/Vless, Trojan， Shadowsocks, Hysteria多种协议。
 * 支持Vless和XTLS等新特性。
 * 支持单实例对接多节点，无需重复启动。
 * 支持限制在线IP。
@@ -28,22 +28,19 @@ A V2board node server based on multi core, modified from XrayR.
 | 自动申请tls证书 | √     | √      | √           | √        |
 | 自动续签tls证书 | √     | √      | √           | √        |
 | 在线人数统计    | √     | √      | √           | √        |
-| 审计规则      | √     | √      | √           |          |
+| 审计规则      | √     | √      | √           | √         |
 | 自定义DNS    | √     | √      | √           | √        |
 | 在线IP数限制   | √     | √      | √           | √        |
-| 连接数限制     | √     | √      | √           |          |
-| 跨节点IP数限制  | √     | √      | √           |          |
-| 按照用户限速    | √     | √      | √           |          |
-| 动态限速(未测试) | √     | √      | √           |          |
+| 连接数限制     | √     | √      | √           | √         |
+| 跨节点IP数限制  |      |       |            |          |
+| 按照用户限速    | √     | √      | √           | √         |
+| 动态限速(未测试) | √     | √      | √           | √         |
 
 ## TODO
 
 - [ ] 重新实现动态限速
 - [ ] 重新实现在线IP同步（跨节点在线IP限制）
-- [x] 集成基本操作Command(Start, Stop, Restart, Status, Uninstall)
-- [ ] 完善Hysteria内核支持
 - [ ] 完善使用文档
-- [ ] 尽可能统一日志输出格式
 
 ## 软件安装
 
@@ -59,8 +56,8 @@ wget -N https://raw.githubusercontents.com/InazumaV/V2bX-script/master/install.s
 
 ## 构建
 ``` bash
-# 通过-tag选项指定要编译的内核， 可选 xray， hy
-go build -o V2bX -ldflags '-s -w' -gcflags="all=-trimpath=${PWD}" -asmflags="all=-trimpath=${PWD} -tags "xray hy"
+# 通过-tags选项指定要编译的内核， 可选 xray， sing
+go build -o V2bX -ldflags '-s -w' -gcflags="all=-trimpath=${PWD}" -asmflags="all=-trimpath=${PWD} -tags "xray sing"
 ```
 
 ## 配置文件及详细使用教程
